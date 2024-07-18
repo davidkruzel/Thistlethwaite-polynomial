@@ -156,27 +156,7 @@ def edges_from_graph(graph):
       vertex_list[-1] = vertex_list[-1] + graph[i]
     if i == len(graph) - 1:
       result.append([count, current_sign, { int(vertex_list[-2]), int(vertex_list[-1]) }])
-  print(result)
   return result
-    
-      
-      
-    
-      
-
-
-  
-  while len(graph) > 0:
-    if graph[1] == '+':
-      sign = 1
-    else:
-      sign = -1
-    v1 = int(graph[0])
-    v2 = int(graph[2])
-    result.append([label, sign, {v1, v2}])
-    label += 1
-    graph = graph[4:]
-  return(result)
   
 # Determine if a given string is a valid graph. 
 def is_valid(input):
